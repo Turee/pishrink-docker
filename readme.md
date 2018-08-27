@@ -7,6 +7,12 @@ https://github.com/Drewsif/PiShrink
 
 In the directory containing `<your-image>.img`:
 
-    docker run --privileged=true -v `pwd`:/workdir turee/pishrink-docker pishrink <your-image>.img
+bash:
+
+    docker run --rm --privileged=true -v `pwd`:/workdir turee/pishrink-docker pishrink <your-image>.img
+
+fish:
+
+    docker run --rm --privileged=true -v (pwd):/workdir turee/pishrink-docker pishrink <your-image>.img    
 
 Enjoy smaller Raspbian image.
